@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js"></script>
+  <title>Задачи</title>
+</head>
+
+<body>
+
+  <h2>Задача 1</h2>
+  <p id="task1"></p>
+  <script>
+    document.getElementById('task1').textContent = task1();
+  </script>
+
+  <h2>Задача 2</h2>
+  <input type="text" id="task2" placeholder="Год">
+  <button onclick="task2(document.getElementById('task2').value)">Проверить год</button><br>
+
+  <h2>Задача 3</h2>
+  <input type="text" id="task3" placeholder="Формат даты(01.12.1990)">
+  <button onclick="task3(document.getElementById('task3').value)">Какой день недели?</button><br>
+
+  <h2>Задача 4</h2>
+  <p id="task4"></p>
+  <script>
+    document.getElementById('task4').textContent = task4();
+  </script>
+
+  <h2>Задача 5</h2>
+  <input type="text" id="task5" placeholder="Формат даты(01.12.1990)">
+  <button onclick="task5(document.getElementById('task5').value)">Когда день рождение?</button><br>
+
+  <h2>Задача 6</h2>
+  <p id="task6"></p>
+  <script>
+    document.getElementById('task6').textContent = task6();
+  </script>
+
+  <h2>Задача 7</h2>
+  <input type="text" id="task7" placeholder="Формат даты(31.12)">
+  <button onclick="task7(document.getElementById('task7').value)">Какой знак зодиака?</button><br>
+
+  <h2>Задача 8</h2>
+  <p id="task8"></p>
+  <script>
+    document.getElementById('task8').textContent = task8();
+  </script>
+
+  <h2>Задача 9</h2>
+  <input type="text" id="task9" placeholder="Формат даты(31.12)">
+  <button onclick="task9(document.getElementById('task9').value)">Гороскоп на несколько дней вперед</button><br>
+
+  <h2>Задача 10</h2>
+  <textarea id="task10" placeholder="Введите текст"></textarea>
+  <button onclick="task10(document.getElementById('task10').value)">Статистика текста</button><br>
+
+  <h2>Задача 11</h2>
+  <textarea id="task11" placeholder="Введите текст"></textarea>
+  <button onclick="task11(document.getElementById('task11').value)">Статистика текста</button><br>
+
+  <h2>Задача 12</h2>
+  <input type="text" id="task12" placeholder="Введите буквук на анг">
+  <button onclick="task12(document.getElementById('task12').value)">Узнать</button><br>
+
+  <h2>Задача 13</h2>
+  <textarea id="task13" placeholder="Введите текст"></textarea>
+  <button onclick="task13(document.getElementById('task13').value)">Статистика текста</button><br>
+
+  <h2>Задача 14</h2>
+  <input type="text" id="task14" placeholder="Введите текст">
+  <button onclick="task14(document.getElementById('task14').value)">Транслитерация</button><br>
+
+  <h2>Задача 15</h2>
+  <input type="text" id="task15" placeholder="Введите текст">
+  <input type="radio" name="translitType" value="toTranslit" checked> в транслит
+  <input type="radio" name="translitType" value="fromTranslit"> из транслит
+  <button
+    onclick="task15(document.getElementById('task15').value, document.querySelector('input[name=\'translitType\']:checked').value)">Транслитерация</button><br>
+
+  <h2>Задача 16</h2>
+  <div id="task16"></div>
+  <button onclick="task16Check()">Проверить ответы</button>
+  <script>
+    task16();
+  </script>
+
+  <h2>Задача 17</h2>
+  <div id="task17"></div>
+  <button onclick="task17Check()">Проверить ответы</button>
+  <script>
+    task17();
+  </script>
+
+  <h2>Задача 18</h2>
+  <div id="task18"></div>
+  <button onclick="task18Check()">Проверить ответы</button>
+  <script>
+    task18();
+  </script>
+
+  <h2>Задача 19</h2>
+  <input type="text" id="task19" placeholder="Введите число">
+  <button onclick="task19(document.getElementById('task19').value)">Факториал</button><br>
+
+  <h2>Задача 20</h2>
+  <input type="text" id="task20A" placeholder="Введите коэффициент a">
+  <input type="text" id="task20B" placeholder="Введите коэффициент b">
+  <input type="text" id="task20C" placeholder="Введите коэффициент c">
+  <button
+    onclick="task20(document.getElementById('task20A').value, document.getElementById('task20B').value, document.getElementById('task20C').value)">Корни
+    кв. ур-я</button><br>
+
+  <h2>Задача 21</h2>
+  <input type="text" id="task21A" placeholder="Введите коэффициент a">
+  <input type="text" id="task21B" placeholder="Введите коэффициент b">
+  <input type="text" id="task21C" placeholder="Введите коэффициент c">
+  <button
+    onclick="task21(document.getElementById('task21A').value, document.getElementById('task21B').value, document.getElementById('task21C').value)">тройка
+    пифагора</button><br>
+
+  <h2>Задача 22</h2>
+  <input type="text" id="task22" placeholder="Введите число">
+  <button onclick="task22(document.getElementById('task22').value)">Делитель числа</button><br>
+
+  <h2>Задача 23</h2>
+  <input type="text" id="task23" placeholder="Введите число">
+  <button onclick="task23(document.getElementById('task23').value)">Разложение на простые множители</button><br>
+
+  <h2>Задача 24</h2>
+  <input type="text" id="task24A" placeholder="Введите первое число">
+  <input type="text" id="task24B" placeholder="Введите второе число">
+  <button onclick="task24(document.getElementById('task24A').value, document.getElementById('task24B').value)">Общий
+    делитель у обоих чисел</button><br>
+
+  <h2>Задача 25</h2>
+  <input type="text" id="task25A" placeholder="Введите первое число">
+  <input type="text" id="task25B" placeholder="Введите второе число">
+  <button onclick="task25(document.getElementById('task25A').value, document.getElementById('task25B').value)">НОД двух
+    чисел</button><br>
+
+  <h2>Задача 26</h2>
+  <input type="text" id="task26A" placeholder="Введите первое число">
+  <input type="text" id="task26B" placeholder="Введите второе число">
+  <button onclick="task26(document.getElementById('task26A').value, document.getElementById('task26B').value)">НОК двух
+    чисел</button><br>
+
+  <h2>Задача 27</h2>
+
+  <select id="daySelect">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">14</option>
+    <option value="15">16</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+    <option value="24">24</option>
+    <option value="25">25</option>
+    <option value="26">26</option>
+    <option value="27">27</option>
+    <option value="28">28</option>
+    <option value="29">29</option>
+    <option value="30">30</option>
+    <option value="31">31</option>
+  </select>
+
+  <select id="monthSelect">
+    <option value="1">Январь</option>
+    <option value="2">Февраль</option>
+    <option value="3">Март</option>
+    <option value="4">Апрель</option>
+    <option value="5">Май</option>
+    <option value="6">Июнь</option>
+    <option value="7">Июль</option>
+    <option value="8">Август</option>
+    <option value="9">Сентябрь</option>
+    <option value="10">Откябрь</option>
+    <option value="11">Ноябрь</option>
+    <option value="12">Декабрь</option>
+  </select>
+
+  <select id="yearSelect">
+    <option value="1990">1990</option>
+    <option value="1991">1991</option>
+    <option value="1992">1992</option>
+    <option value="1993">1993</option>
+    <option value="1994">1994</option>
+    <option value="1995">1995</option>
+    <option value="1996">1996</option>
+    <option value="1997">1997</option>
+    <option value="1998">1998</option>
+    <option value="1999">1999</option>
+    <option value="2000">2000</option>
+    <option value="2001">2001</option>
+    <option value="2002">2002</option>
+    <option value="2003">2003</option>
+    <option value="2004">2004</option>
+    <option value="2005">2005</option>
+    <option value="2006">2006</option>
+    <option value="2007">2007</option>
+    <option value="2008">2008</option>
+    <option value="2009">2009</option>
+    <option value="2010">2010</option>
+    <option value="2011">2011</option>
+    <option value="2012">2012</option>
+    <option value="2013">2013</option>
+    <option value="2014">2014</option>
+    <option value="2015">2015</option>
+    <option value="2016">2016</option>
+    <option value="2017">2017</option>
+    <option value="2018">2018</option>
+    <option value="2019">2019</option>
+    <option value="2020">2020</option>
+    <option value="2021">2021</option>
+    <option value="2022">2022</option>
+    <option value="2023">2023</option>
+    <option value="2024">2024</option>
+    <option value="2025">2025</option>
+  </select>
+  <button onclick="task27()">Показать день недели</button>
+
+</body>
+
+</html>
